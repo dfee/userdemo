@@ -1,0 +1,3 @@
+include userdemo/config/deployment.ini_tmpl
+recursive-include userdemo/public *
+recursive-include userdemo/templates *

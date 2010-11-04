@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>Register</title>
+</head>
+<body>
+<h1>Register</h1>
+
+<form action="/auth/register" method="post">
+<table>
+<tr><th>Username:</th><td>{{h.text('username')}}</td></tr>
+<tr><th>Password:</th><td>{{h.password('password')}}</td></tr>
+<tr><th>Email:</th><td>{{h.text('email')}}</td></tr>
+<tr><th>First Name:</th><td>{{h.text('first_name')}}</td></tr>
+<tr><th>Last Name:</th><td>{{h.text('last_name')}}</td></tr>
+</table>
+<input type="submit" value="Register" />
+</form>

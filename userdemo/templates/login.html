@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>Login</title>
+</head>
+<body>
+<h1>Login</h1>
+
+<form action="/auth/login" method="post">
+<table>
+<tr><th>Username:</th><td>{{h.text('username')}}</td></tr>
+<tr><th>Password:</th><td>{{h.password('password')}}</td></tr>
+</table>
+<input type="submit" value="Login" />
+</form>
+
+{% if c.invalid_user %}
+  <p>*** An invalid username or password was entered.</p>
+{% endif %}
+
+<p>Don't have an account? Click <a href="/auth/register">here</a> to register.</p>
+</body></html>
